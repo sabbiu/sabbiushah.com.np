@@ -57,7 +57,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `UA-131081562-1`,
+        trackingId: `UA-131081562-1`,
       },
     },
     `gatsby-plugin-feed`,
@@ -81,5 +81,6 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
+    `gatsby-plugin-netflify-cms`,
   ],
 }

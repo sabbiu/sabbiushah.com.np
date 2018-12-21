@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: 'static/uploads'
+public_folder: 'uploads'
+
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'content/blog'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Date', name: 'date', widget: 'DateTime', required: true }
+      - { label: 'Spoiler', name: 'spoiler', widget: 'String', required: true }
+      - { label: 'Tags', name: 'tags', widget: 'List', required: true }
