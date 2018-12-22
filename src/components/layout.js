@@ -1,10 +1,3 @@
-// custom typefaces
-import 'typeface-montserrat'
-import 'typeface-merriweather'
-import 'katex/dist/katex.min.css'
-import '../utils/index.css'
-import '../utils/theme.css'
-
 import React from 'react'
 import { Link } from 'gatsby'
 
