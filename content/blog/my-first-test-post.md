@@ -5,7 +5,6 @@ spoiler: Test of (almost) all the functionality to be included in technological 
 tags:
   - Test
 ---
-
 Wow! I love blogging so much already.
 
 <iframe src="https://example.com/" width="600" height="400"></iframe>
@@ -19,6 +18,6 @@ const Greeting = () => <p>Hello</p>
 new Greeting() // 🔴 Greeting is not a constructor
 ```
 
-![Chinese Salty Egg](img/salty_egg.jpg)
+![Chinese Salty Egg](img/salty_egg.jpg "Sup Sup")
 
 Sup Dude :)
