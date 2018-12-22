@@ -5,5 +5,8 @@ spoiler: This is test for netlify
 tags:
   - sup
   - test
+keywords:
+  - sup
 ---
+
 **Hello**

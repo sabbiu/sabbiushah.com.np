@@ -4,6 +4,8 @@ date: '2018-12-21T15:34:25.935Z'
 spoiler: Test of (almost) all the functionality to be included in technological blog
 tags:
   - Test
+keywords:
+  - Sup
 ---
 
 Wow! I love blogging so much already. Hello. World.

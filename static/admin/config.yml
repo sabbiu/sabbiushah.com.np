@@ -16,4 +16,5 @@ collections:
       - { label: 'Date', name: 'date', widget: 'datetime', required: true }
       - { label: 'Spoiler', name: 'spoiler', widget: 'string', required: true }
       - { label: 'Tags', name: 'tags', widget: 'list', required: true }
+      - { label: 'Keywords', name: 'keywords', widget: 'list', required: true }
       - { label: Body, name: body, widget: markdown }

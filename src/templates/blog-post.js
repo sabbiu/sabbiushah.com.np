@@ -88,7 +88,7 @@ const BlogPost = props => {
             title={post.frontmatter.title}
             description={post.frontmatter.spoiler}
             slug={post.fields.slug}
-            keywords={post.frontmatter.tags}
+            keywords={post.frontmatter.keywords}
           />
         }
         tags={post.frontmatter.tags}
@@ -184,6 +184,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         spoiler
         tags
+        keywords
       }
       fields {
         slug
