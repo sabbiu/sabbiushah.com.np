@@ -39,7 +39,7 @@ export const BlogPostTemplate = ({
           marginTop: rhythm(-1),
         }}
       >
-        {moment(date).format('MMMM D, YYYY')}
+        {moment(new Date(date)).format('MMMM D, YYYY')}
         {` • ${timeToRead || ''} min read`}
       </p>
       <PostContent content={content} />
