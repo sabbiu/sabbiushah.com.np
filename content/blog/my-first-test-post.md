@@ -19,6 +19,6 @@ const Greeting = () => <p>Hello</p>
 new Greeting() // 🔴 Greeting is not a constructor
 ```
 
-![Chinese Salty Egg](img/salty_egg.jpg)
+![Chinese Salty Egg](/img/salty_egg.jpg)
 
 Sup Dude :)
