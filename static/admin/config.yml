@@ -13,6 +13,7 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - { label: 'Date', name: 'date', widget: 'DateTime', required: true }
-      - { label: 'Spoiler', name: 'spoiler', widget: 'String', required: true }
-      - { label: 'Tags', name: 'tags', widget: 'List', required: true }
+      - { label: 'Date', name: 'date', widget: 'datetime', required: true }
+      - { label: 'Spoiler', name: 'spoiler', widget: 'string', required: true }
+      - { label: 'Tags', name: 'tags', widget: 'list', required: true }
+      - { label: Body, name: body, widget: markdown }
