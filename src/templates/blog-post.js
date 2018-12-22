@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import { kebabCase } from 'lodash'
 import get from 'lodash/get'
+import moment from 'moment'
 
 import Bio from '../components/bio'
 import Layout from '../components/layout'
@@ -38,7 +39,7 @@ export const BlogPostTemplate = ({
           marginTop: rhythm(-1),
         }}
       >
-        {date}
+        {moment(date).format('MMMM D, YYYY')}
         {` • ${timeToRead || ''} min read`}
       </p>
       <PostContent content={content} />
