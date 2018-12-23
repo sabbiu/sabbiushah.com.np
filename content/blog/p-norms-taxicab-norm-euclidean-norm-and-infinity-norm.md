@@ -44,4 +44,4 @@ To Be Continued ...
 
 [Wolfram Mathematica Demonstaration](http://demonstrations.wolfram.com/UnitNormVectorsUnderDifferentPNorms/)
 
-<iframe src="http://demonstrations.wolfram.com/UnitNormVectorsUnderDifferentPNorms/" width="600" height="400"></iframe>
+<iframe src="//demonstrations.wolfram.com/UnitNormVectorsUnderDifferentPNorms/" width="600" height="400"></iframe>
