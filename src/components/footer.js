@@ -1,4 +1,4 @@
-import './footer.css'
+// import './footer.css'
 import React from 'react'
 
 import { rhythm } from '../utils/typography'
@@ -12,9 +12,9 @@ class Footer extends React.Component {
           paddingTop: rhythm(1),
         }}
       >
-        <div style={{ float: 'right' }}>
+        {/* <div style={{ float: 'right' }}>
           <div className="heart">❤</div>
-        </div>
+        </div> */}
         <a
           href="https://twitter.com/sabbiushah"
           target="_blank"
