@@ -1,5 +1,5 @@
 ---
-title: 'p-Norms (Manhattan Norm, Euclidean Norm and ∞-norm)'
+title: 'p-Norms (Taxicab Norm, Euclidean Norm and ∞-norm)'
 date: 2018-12-23T00:46:14.829Z
 spoiler: 'In Linear Algebra, norms are the measure of distance.'
 tags:
