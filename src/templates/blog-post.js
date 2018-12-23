@@ -11,6 +11,8 @@ import Content, { HTMLContent } from '../components/Content'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
 
+import "katex/dist/katex.min.css"
+
 const GITHUB_USERNAME = 'sabbiu'
 const GITHUB_REPO_NAME = 'sabbiushah.com.np'
 
