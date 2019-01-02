@@ -1,5 +1,5 @@
 {
-  "editor.formatOnSave": true,
-  "eslint.autoFixOnSave": false,
-  "prettier.eslintIntegration": true,
+  "editor.formatOnSave": false,
+  "eslint.autoFixOnSave": true,
+  "prettier.eslintIntegration": true
 }

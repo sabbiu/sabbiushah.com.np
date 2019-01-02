@@ -7,7 +7,6 @@
     "url": "https://github.com/sabbiu/sabbiushah.com.np/issues"
   },
   "dependencies": {
-    "@weknow/gatsby-remark-twitter": "^0.1.2",
     "gatsby": "^2.0.19",
     "gatsby-image": "^2.0.22",
     "gatsby-plugin-feed": "^2.0.8",

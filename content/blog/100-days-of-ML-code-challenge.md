@@ -4,7 +4,7 @@ date: 2019-01-02T14:56:17.251Z
 spoiler: 'Logs for my take on 100 days of ML Code Challenge. Started on January 2019. My aim for this challenge is to explore various algorithms and techniques surfacially.'
 tags:
   - 100DaysOfMLCode
-  - log
+  - logs
 keywords:
   - 100DaysOfMLCode
   - logs
@@ -28,7 +28,11 @@ So, my plan is to start by revising [deeplearning.ai](https://www.coursera.org/s
 ## Day 1 : January 02, 2019
 
 **Today's Progress**:
+Revised Neural Network Notation, Logistic Regression. Completed two weeks of first course.
 
 **Thoughts**:
+Taking this challenge is helping me to stick to completing a task properly.
 
 **Link of Work**:
+- [Neural Network Notations](/neural-network-notations)
+- [Logistic Regression as a Neural Network](/logistic-regression-as-a-neural-network)
