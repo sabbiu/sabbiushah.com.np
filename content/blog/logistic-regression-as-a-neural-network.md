@@ -43,7 +43,8 @@ The negative symbol in the equation is to invert the following log graph (shown 
 So, For positive samples, Substituting $(y=1)$, we get,
 
 $$
-\mathcal{L} (\hat{y}, y)= - \log \hat{y}$$
+\mathcal{L} (\hat{y}, y)= - \log \hat{y}
+$$
 
 From above graph, we can see that as $\hat{y}$ approaches $1$, value of $\mathcal{L}$ is close to $0$. Loss is more otherwise.
 
