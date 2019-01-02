@@ -1,11 +1,10 @@
 ---
 title: 'p-Norms (Taxicab Norm, Euclidean Norm and ∞-norm)'
 date: 2018-12-23T00:46:14.829Z
-spoiler: 'In Linear Algebra, norms are the measure of distance.'
+spoiler: 'In Linear Algebra, norms are the measure of distance. Here, we derive 1-norm, 2-norm and infinity-norm and visualize them as a unit circle.'
 tags:
   - linear algebra
   - norms
-  - maths
 keywords:
   - linear algebra
   - norms
@@ -67,7 +66,7 @@ while other terms approaches to $0$. Thus, $\sum_{i=1}^n \frac{|x_i|^p}{m} = 1$
 
 $$
 \begin{aligned}
-\therefore\ ||x||_p & \equiv max(|x_i|)
+\therefore\ ||x||_\infty & \equiv max(|x_i|)
 \end{aligned}
 $$
 
