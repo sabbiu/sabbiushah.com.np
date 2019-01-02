@@ -46,7 +46,7 @@ class BlogIndex extends React.Component {
                 {node.frontmatter.date}
                 {` • ${node.timeToRead} min read`}
               </small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              <p dangerouslySetInnerHTML={{ __html: node.frontmatter.spoiler }} />
             </div>
           )
         })}
@@ -68,7 +68,6 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
           fields {
             slug
           }
@@ -76,6 +75,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            spoiler
           }
         }
       }
