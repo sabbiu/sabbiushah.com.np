@@ -4,14 +4,14 @@ date: 2019-01-02T17:01:51.055Z
 spoiler: 'Implementation of Logistic Regression as a Neural Network.'
 tags:
   - 100DaysOfMLCode
-  - 'deeplearning.ai'
+  - deeplearning.ai
 keywords:
   - 100DaysOfMLCode
   - machine learning
   - deep learning
   - artificial intelligence
   - Andrew Ng
-  - 'deeplearning.ai'
+  - deeplearning.ai
   - Logistic Regression
   - Neural Network
 ---

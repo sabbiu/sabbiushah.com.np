@@ -4,14 +4,14 @@ date: 2019-01-02T15:47:10.855Z
 spoiler: 'Notations of Neural Network used by Andrew Ng in deeplearning.ai course.'
 tags:
   - 100DaysOfMLCode
-  - 'deeplearning.ai'
+  - deeplearning.ai
 keywords:
   - 100DaysOfMLCode
   - machine learning
   - deep learning
   - artificial intelligence
   - Andrew Ng
-  - 'deeplearning.ai'
+  - deeplearning.ai
   - Neural Network Notations
 ---
 

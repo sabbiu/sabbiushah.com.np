@@ -1,10 +1,10 @@
 ---
 title: 'deeplearning.ai Notes'
 date: 2019-01-02T15:00:10.855Z
-spoiler: 'Blogs on Andrew Ng's deeplearning.ai course.'
+spoiler: "Blogs on Andrew Ng's deeplearning.ai course."
 tags:
   - 100DaysOfMLCode
-  - 'deeplearning.ai'
+  - deeplearning.ai
   - logs
 keywords:
   - 100DaysOfMLCode
@@ -12,7 +12,7 @@ keywords:
   - deep learning
   - artificial intelligence
   - Andrew Ng
-  - 'deeplearning.ai'
+  - deeplearning.ai
 ---
 
 ## Course 1: Neural Networks and Deep Learning
