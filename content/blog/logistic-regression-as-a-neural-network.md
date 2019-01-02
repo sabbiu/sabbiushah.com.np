@@ -51,7 +51,7 @@ From above graph, we can see that as $\hat{y}$ approaches $1$, value of $\mathca
 Again, For negative samples, Substituting $(y=0)$, we get,
 
 $$
-\mathcal{L} (\hat{y}, y)= - \log (1-\hat{y})\
+\mathcal{L} (\hat{y}, y)= - \log (1-\hat{y})
 $$
 
 As $\hat{y}$ approaches $0$, value of $\mathcal{L}$ is close to $0$.
