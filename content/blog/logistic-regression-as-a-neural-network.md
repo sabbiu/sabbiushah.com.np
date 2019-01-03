@@ -61,7 +61,7 @@ As $\hat{y}$ approaches $0$, value of $\mathcal{L}$ is close to $0$.
 It is simply the average of loss function through all the examples.
 
 $$
-J(w,b) = \frac{1}{m} \Sigma_{i=1}^m \mathcal{L} (\hat{y}^{(i)}, y^{(i)})
+J(w,b) = \frac{1}{m} \sum_{i=1}^m \mathcal{L} (\hat{y}^{(i)}, y^{(i)})
 $$
 
 Plotting $J$ vs $(w,b)$  
@@ -87,8 +87,7 @@ Here, $\alpha$ represents learning rate, and controls how big a step to take on 
 Let us substitute $a=\hat{y}$. Using Chain rule,
 
 $$
-\frac{\mathcal{d}J}{\mathcal{d}w}= 
-\frac{\mathcal{d}J}{\mathcal{dL}} 
+\frac{\mathcal{dL}}{\mathcal{d}w}= 
 \frac{\mathcal{dL}}{\mathcal{d}a} 
 \frac{\mathcal{d}a}{\mathcal{d}z}
 \frac{\mathcal{d}z}{\mathcal{d}w}
@@ -98,7 +97,6 @@ So,
 
 $$
 \begin{aligned}
-\frac{\mathcal{d}J}{\mathcal{dL}} & = 1\\
 \frac{\mathcal{dL}}{\mathcal{d}a} & = - \frac{y}{a} + \frac{1-y}{1-a}\\
 \frac{\mathcal{d}a}{\mathcal{d}z} & = a(1-a)\\
 \frac{\mathcal{d}z}{\mathcal{d}w} & = x
@@ -108,7 +106,9 @@ $$
 Finally, we get,
 
 $$
-\frac{\mathcal{d}J}{\mathcal{d}w}= x(a-y)
+\frac{\mathcal{d}J}{\mathcal{d}w}= 
+\frac{1}{m} \sum_{i=1}^m
+x^{(i)}(a^{(i)}-y^{(i)})
 $$
 
 ### Extras
