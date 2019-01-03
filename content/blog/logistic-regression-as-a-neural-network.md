@@ -38,7 +38,7 @@ $$
 
 We wanted to use square error function to have loss value to be as small as possible.
 
-The negative symbol in the equation is to invert the following log graph (shown in blue in the figure).  
+The negative symbol in the equation is to invert the following log graph (inverted graph is shown in blue colour).  
 ![Log Graph](/img/log-graph.jpg)  
 So, For positive samples, Substituting $(y=1)$, we get,
 
@@ -71,12 +71,16 @@ Plotting $J$ vs $(w,b)$
 
 At first, we randomly initialize $w$ and $b$. Then, we move towards minimum point in the graph.
 
-Repeat until $|w_{old} - w_{new}| < \varepsilon$ and $|b_{old} - b_{new}| < \varepsilon$,
+Repeat the following steps till the algorithm converges,
 
 $$
-w := w - \alpha \frac{\mathcal{d}J(w,b)}{\mathcal{d}w}\\
-b := b - \alpha \frac{\mathcal{d}J(w,b)}{\mathcal{d}b}
+\begin{aligned}
+w & := w - \alpha \frac{\mathcal{d}J(w,b)}{\mathcal{d}w}\\
+b & := b - \alpha \frac{\mathcal{d}J(w,b)}{\mathcal{d}b}
+\end{aligned}
 $$
+
+Here, $\alpha$ represents learning rate, and controls how big a step to take on each iteration of gradient descent.
 
 ### Deriving $\frac{\mathcal{d}J}{\mathcal{d}w}$
 
@@ -93,14 +97,33 @@ $$
 So,
 
 $$
-\frac{\mathcal{d}J}{\mathcal{dL}} = 1\\
-\frac{\mathcal{dL}}{\mathcal{d}a} = - \frac{y}{a} + \frac{1-y}{1-a}\\
-\frac{\mathcal{d}a}{\mathcal{d}z} = a(1-a)\\
-\frac{\mathcal{d}z}{\mathcal{d}w} = x
+\begin{aligned}
+\frac{\mathcal{d}J}{\mathcal{dL}} & = 1\\
+\frac{\mathcal{dL}}{\mathcal{d}a} & = - \frac{y}{a} + \frac{1-y}{1-a}\\
+\frac{\mathcal{d}a}{\mathcal{d}z} & = a(1-a)\\
+\frac{\mathcal{d}z}{\mathcal{d}w} & = x
+\end{aligned}
 $$
 
 Finally, we get,
 
 $$
 \frac{\mathcal{d}J}{\mathcal{d}w}= x(a-y)
+$$
+
+### Extras
+
+**Deriving $\frac{\mathcal{d}a}{\mathcal{d}z}$**
+
+We know, $a = \sigma(z)=\frac{1}{1+e^{-z}}$
+
+$$
+\begin{aligned}
+\frac{\mathcal{d}a}{\mathcal{d}z} & = \frac{\mathcal{d}}{\mathcal{d}z}
+\Big(\frac{1}{1+e^{-z}}\Big)\\
+& = \frac{- e^{-z}(-1)}{(1+e^{-z})^2}\\
+& = \Big(\frac{1}{1+e^{-z}}\Big)\Big(\frac{e^{-z}}{1+e^{-z}}\Big)\\
+& = \Big(\frac{1}{1+e^{-z}}\Big)\Big(1-\frac{1}{1+e^{-z}}\Big)\\
+& = a(1-a)\\
+\end{aligned}
 $$

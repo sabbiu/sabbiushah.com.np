@@ -28,7 +28,16 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
+        strategy: 'img',
         plugins: [
+          {
+            resolve: 'gatsby-remark-draw',
+            options: {
+              mermaid: {
+                theme: 'forest',
+              },
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
