@@ -20,7 +20,7 @@
     "gatsby-plugin-sharp": "^2.0.6",
     "gatsby-plugin-typography": "^2.2.0",
     "gatsby-remark-copy-linked-files": "^2.0.5",
-    "gatsby-remark-flowchart": "0.0.1",
+    "gatsby-remark-graph": "^0.2.2",
     "gatsby-remark-images": "^2.0.4",
     "gatsby-remark-katex": "^3.0.1",
     "gatsby-remark-prismjs": "^3.0.0",

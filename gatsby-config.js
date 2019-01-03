@@ -30,12 +30,12 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-flowchart`,
+            resolve: 'gatsby-remark-graph',
             options: {
-              // see more details on https://github.com/adrai/flowchart.js
-              'fill': 'white',
-              'line-color': 'black',
-            }
+              // this is the language in your code-block that triggers mermaid parsing
+              language: 'mermaid', // default
+              theme: 'neutral' // could also be dark, forest, or neutral
+            },
           },
           {
             resolve: `gatsby-remark-images`,
