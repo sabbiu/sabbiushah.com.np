@@ -26,13 +26,15 @@ I have already taken few courses in Machine Learning surfacially. I have also ta
 So, my plan is to start by revising [deeplearning.ai](https://www.coursera.org/specializations/deep-learning) course from coursera followed by course on [Advanced Machine Learning](https://www.coursera.org/specializations/aml) and see where it goes. I also plan to write a blog about everything I learn.
 
 ## Day 1 : January 02, 2019
+|||
+|---| ---|
+|**Today's Progress**| Revised Neural Network Notation, Logistic Regression. Completed two weeks of first course. |
+|**Thoughts**|Taking this challenge is helping me to stick to completing a task properly.|
+|**Link of Work**|[Neural Network Notations](/neural-network-notations), [Logistic Regression as a Neural Network](/logistic-regression-as-a-neural-network)| 
 
-**Today's Progress**:
-Revised Neural Network Notation, Logistic Regression. Completed two weeks of first course.
-
-**Thoughts**:
-Taking this challenge is helping me to stick to completing a task properly.
-
-**Link of Work**:
-- [Neural Network Notations](/neural-network-notations)
-- [Logistic Regression as a Neural Network](/logistic-regression-as-a-neural-network)
+## Day 2 : January 03, 2019
+|||
+|---| ---|
+|**Today's Progress**|Logistic Regression Code Review|
+|**Thoughts**|Got better perspective in terms of code.|
+|**Link of Work**|Code added to Previous article [Logistic Regression as a Neural Network](/logistic-regression-as-a-neural-network)| 

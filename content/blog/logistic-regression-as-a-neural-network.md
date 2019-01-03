@@ -115,6 +115,8 @@ $$
 
 For detail, refer to ipynb file mentioned above.
 
+![Logistic Regression](/img/log-reg.png)
+
 ### Forward and Backward Substitution
 
 ```python

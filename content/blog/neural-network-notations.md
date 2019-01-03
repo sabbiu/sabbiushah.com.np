@@ -43,6 +43,15 @@ $$
 _Note: Features of same example represents a column and, multiple examples are stacked vertically_  
 _Note: Following Notation can be referred when reading specific blog_
 
-## Logistic Regression's Derivative notation
+## Logistic Regression
 
+![Logistic Regression](/img/log-reg.png)
+
+**Derivative notation:**
 $\frac{\mathcal{dL}}{\mathcal{d}w}$ is denoted simply as "$\mathcal{d}w$". This notation is used when the derivative is taken on the end of computation graph with respect to any variable.
+
+## Neural Network Model
+
+### Single Hidden Layer
+![NN with single hidden layer](/img/nn-single.png)
+

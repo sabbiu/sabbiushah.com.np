@@ -12,6 +12,21 @@ Testing flowchart implementation
 
 ## Example 1: Flowchart
 
+```mermaid
+graph LR
+  X[x1] --> A(( ))
+  Y[x2] --> A(( ))
+  Z[x3] --> A(( ))
+  X[x1] --> B(( ))
+  Y[x2] --> B(( ))
+  Z[x3] --> B(( ))
+  X[x1] --> C(( ))
+  Y[x2] --> C(( ))
+  Z[x3] --> C(( ))
+  A --> y[Y hat]
+  B --> y[Y hat]
+  C --> y[Y hat]
+```
 
 ```mermaid
 graph LR
