@@ -45,3 +45,24 @@
   box-shadow: none;
   text-decoration: none !important;
 }
+
+
+.remark-draw-dot > svg {
+  max-width: 100%;
+  max-height: 500px;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+img[title~="remark-draw"] {
+  display: block;
+  max-width: 100%;
+  max-height: 500px;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  margin-right: 1rem;
+  overflow: hidden;
+}

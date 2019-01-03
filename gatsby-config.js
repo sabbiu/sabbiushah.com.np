@@ -28,15 +28,14 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        strategy: 'img',
         plugins: [
           {
-            resolve: 'gatsby-remark-draw',
+            resolve: `gatsby-remark-flowchart`,
             options: {
-              mermaid: {
-                theme: 'forest',
-              },
-            },
+              // see more details on https://github.com/adrai/flowchart.js
+              'fill': 'white',
+              'line-color': 'black',
+            }
           },
           {
             resolve: `gatsby-remark-images`,
