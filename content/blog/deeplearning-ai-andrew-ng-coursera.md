@@ -19,3 +19,4 @@ keywords:
 
 1. [Neural Network Notations](/neural-network-notations)
 2. [Logistic Regression as a Neural Network](/logistic-regression-as-a-neural-network)
+3. [Neural Network](/all-about-neural-network)

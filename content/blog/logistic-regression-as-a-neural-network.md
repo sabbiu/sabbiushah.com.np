@@ -15,8 +15,8 @@ keywords:
   - Logistic Regression
   - Neural Network
 ---
-
-Github Code: [Logistic Regression with a Neural Network Mindset](https://github.com/sabbiu/deeplearning.ai-coursera/blob/master/p1.coursera_server/Week%202/Logistic%20Regression%20as%20a%20Neural%20Network/Logistic%20Regression%20with%20a%20Neural%20Network%20mindset%20v4.ipynb)
+*This blog is a part of [deeplearning.ai series](/deeplearning-ai-andrew-ng-coursera)  
+Github Code: [Logistic Regression with a Neural Network Mindset](https://github.com/sabbiu/deeplearning.ai-coursera/blob/master/p1.coursera_server/Week%202/Logistic%20Regression%20as%20a%20Neural%20Network/Logistic%20Regression%20with%20a%20Neural%20Network%20mindset%20v4.ipynb)*
 
 Given $x$, we want $\hat{y} = P(y=1|x)$ where, $0 \leq \hat{y} \leq 1$,  
 Parameters: $w \in \R^{n_x}$, $b \in \R$.  
@@ -46,7 +46,7 @@ $$
 \mathcal{L} (\hat{y}, y)= - \log \hat{y}
 $$
 
-From above graph, we can see that as $\hat{y}$ approaches $1$, value of $\mathcal{L}$ is close to $0$. Loss is more otherwise.
+From above graph, we can see that as $\hat{y}$ approaches $1$, value of $\mathcal{L}$ is close to $0$. Else, Loss is more.
 
 Again, For negative samples, Substituting $(y=0)$, we get,
 
@@ -284,10 +284,10 @@ We know, $a = \sigma(z)=\frac{1}{1+e^{-z}}$
 $$
 \begin{aligned}
 \frac{\mathcal{d}a}{\mathcal{d}z} & = \frac{\mathcal{d}}{\mathcal{d}z}
-\Big(\frac{1}{1+e^{-z}}\Big)\\
+\left(\frac{1}{1+e^{-z}}\right)\\
 & = \frac{- e^{-z}(-1)}{(1+e^{-z})^2}\\
-& = \Big(\frac{1}{1+e^{-z}}\Big)\Big(\frac{e^{-z}}{1+e^{-z}}\Big)\\
-& = \Big(\frac{1}{1+e^{-z}}\Big)\Big(1-\frac{1}{1+e^{-z}}\Big)\\
+& = \left(\frac{1}{1+e^{-z}}\right)\left(\frac{e^{-z}}{1+e^{-z}}\right)\\
+& = \left(\frac{1}{1+e^{-z}}\right)\left(1-\frac{1}{1+e^{-z}}\right)\\
 & = a(1-a)\\
 \end{aligned}
 $$

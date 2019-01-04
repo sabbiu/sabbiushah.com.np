@@ -14,6 +14,7 @@ keywords:
   - deeplearning.ai
   - Neural Network Notations
 ---
+*This blog is a part of [deeplearning.ai series](/deeplearning-ai-andrew-ng-coursera)*
 
 ## Binary Classification
 
@@ -52,6 +53,19 @@ $\frac{\mathcal{dL}}{\mathcal{d}w}$ is denoted simply as "$\mathcal{d}w$". This 
 
 ## Neural Network Model
 
-### Single Hidden Layer
 ![NN with single hidden layer](/img/nn-single.png)
 
+This Neural Network is also known as 2 layer Neural Network.
+
+**Input**  
+$x_i$ represents $i^{\text{th}}$ input node. Also represented as $a_i^{[0]}$, i.e, $i^{\text{th}}$ node of layer $0$  
+$x$ (also $a^{[0]}$) represents vector comprising all the nodes $x_i$ i.e, $\left(\begin{matrix} x_1\\ x_2 \end{matrix}\right)$
+
+**Hidden Layer $l$**  
+$a_i^{[l]}$ represents activation of $i^{\text{th}}$ node of layer '$l$'  
+$a^{[l]}$ represents activation vector comprising all the nodes of layer '$l$'$\left(\begin{matrix}a_1^{[l]}\\ a_2^{[l]}\\ a_3^{[l]}\\ a_4^{[l]} \end{matrix}\right)$   
+$W_{ij}^{[l]}$ represents weight of $i^{\text{th}}$ node for layer '$l$' with respect to $j^{\text{th}}$ node of previous layer.  
+$W^{[l]}$ is Weight matrix having dimension $(\text{\#}nodes_l, \text{\#}nodes_{(l-1)})$ i.e, (number of nodes in current layer, number of nodes in previous layer) 
+
+**Output**  
+The value of '$l$' in output layer is 'L'.

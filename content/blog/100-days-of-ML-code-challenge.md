@@ -29,7 +29,7 @@ So, my plan is to start by revising [deeplearning.ai](https://www.coursera.org/s
 |||
 |---| ---|
 |**Today's Progress**| Revised Neural Network Notation, Logistic Regression. Completed two weeks of first course. |
-|**Thoughts**|Taking this challenge is helping me to stick to completing a task properly.|
+|**Thoughts**|Taking this challenge is helping me stick to completing a task properly.|
 |**Link of Work**|[Neural Network Notations](/neural-network-notations), [Logistic Regression as a Neural Network](/logistic-regression-as-a-neural-network)| 
 
 ## Day 2 : January 03, 2019
@@ -38,3 +38,10 @@ So, my plan is to start by revising [deeplearning.ai](https://www.coursera.org/s
 |**Today's Progress**|Logistic Regression Code Review|
 |**Thoughts**|Got better perspective in terms of code.|
 |**Link of Work**|Code added to Previous article [Logistic Regression as a Neural Network](/logistic-regression-as-a-neural-network)| 
+
+## Day 3 : January 04, 2019
+|||
+|---| ---|
+|**Today's Progress**|Understanding Neural Network with equations and code|
+|**Thoughts**|Completed another topic.|
+|**Link of Work**|[Neural Network](/all-about-neural-network)| 
