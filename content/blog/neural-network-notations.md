@@ -64,6 +64,7 @@ $x$ (also $a^{[0]}$) represents vector comprising all the nodes $x_i$ i.e, $\lef
 **Hidden Layer $l$**  
 $a_i^{[l]}$ represents activation of $i^{\text{th}}$ node of layer '$l$'  
 $a^{[l]}$ represents activation vector comprising all the nodes of layer '$l$'$\left(\begin{matrix}a_1^{[l]}\\ a_2^{[l]}\\ a_3^{[l]}\\ a_4^{[l]} \end{matrix}\right)$   
+$A^{[l]} \in \R(\text{\# of nodes in layer l}, m)$, Capital letter represents all the examples stacked vertically  
 $W_{ij}^{[l]}$ represents weight of $i^{\text{th}}$ node for layer '$l$' with respect to $j^{\text{th}}$ node of previous layer.  
 $W^{[l]}$ is Weight matrix having dimension $(\text{\#}nodes_l, \text{\#}nodes_{(l-1)})$ i.e, (number of nodes in current layer, number of nodes in previous layer) 
 

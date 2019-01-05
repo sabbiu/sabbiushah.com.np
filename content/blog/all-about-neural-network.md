@@ -29,7 +29,7 @@ Steps for implementing neural network can be given as follows:
 
 ```mermaid
 graph TD
-  A[Define the neural network structure i.e, no of units] --> B[Initialize model parameters]
+  A[Define the neural network structure i.e, no of units, layers] --> B[Initialize model parameters]
   B --> C( )
   C --> D[Implement forward propagation]
   D --> E[Compute cost]
@@ -76,6 +76,8 @@ Z^{[l]} & = W^{[l]}A^{[l-1]} + b^{[l]}\\
 A^{[l]} & = g(Z^{[l]})\\
 \end{aligned}
 $$
+
+*Activation Function:* $g()$ represents activation function. Activation function must be non-linear. If we use a linear activation function, then it will be same as using a linear regression.
 
 **Compute Cost**
 
@@ -130,7 +132,7 @@ Now, we update the gradients to the specific parameters.
 
 After repeating the updation process, the model converges, then we use the obtained parameters to predict the label of data using forward propagation. The obtained output from forward propagation is $A^{[2]}$. If $A^{[2]} > 0.5$, then we label this data as positive.
 
-## Neural Network with L hidden layer
+## Neural Network with L-1 hidden layer
 
 ![NN with multiple hidden layer](/img/nn-multiple.png)
 

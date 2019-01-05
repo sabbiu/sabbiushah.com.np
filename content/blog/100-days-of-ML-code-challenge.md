@@ -45,3 +45,10 @@ So, my plan is to start by revising [deeplearning.ai](https://www.coursera.org/s
 |**Today's Progress**|Understanding Neural Network with equations and code|
 |**Thoughts**|Completed another topic.|
 |**Link of Work**|[Neural Network](/all-about-neural-network)| 
+
+## Day 4 : January 05, 2019
+|||
+|---| ---|
+|**Today's Progress**|Learned recipe of Training a ML model|
+|**Thoughts**|Going on good...|
+|**Link of Work**|[Setting up ML Application](/setting-up-ml-application)| 

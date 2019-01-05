@@ -20,3 +20,8 @@ keywords:
 1. [Neural Network Notations](/neural-network-notations)
 2. [Logistic Regression as a Neural Network](/logistic-regression-as-a-neural-network)
 3. [Neural Network](/all-about-neural-network)
+
+## Course 2: Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization
+
+1. [Setting up ML Application](/setting-up-ml-application)
+2. [Regularization](/regularization)
