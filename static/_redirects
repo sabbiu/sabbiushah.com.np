@@ -1,2 +1,0 @@
-# Redirect default Netlify subdomain to primary domain
-https://sabbiu.netlify.com/* https://sabbiushah.com.np/:splat 301!

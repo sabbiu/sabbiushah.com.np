@@ -1,2 +1,3 @@
 User-agent: *
-Disallow:
+
+sitemap: https://sabbiushah.com.np/sitemap.xml

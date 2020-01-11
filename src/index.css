@@ -1,0 +1,25 @@
+h3.css-dgbtiq,
+h3.css-1u9n620 {
+  margin-top: 2.25em;
+}
+
+@media screen and (min-width: 768px) {
+  .css-1bq8wly-Post,
+  .css-depq6-Post {
+    font-size: 1rem !important;
+  }
+  /* 
+  #disqus_thread {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+}
+
+#disqus_thread {
+  overflow: hidden;
+}
+
+#disqus_thread > iframe {
+  margin-bottom: -54px;
+}

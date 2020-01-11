@@ -1,101 +1,141 @@
+require(`dotenv`).config({
+  path: `.env`
+});
+
 module.exports = {
   siteMetadata: {
-    title: 'Sabbiu Shah',
-    author: 'Sabbiu Shah',
-    description:
-      'Personal blog by Sabbiu Shah on Artificial Intelligence, Maths, Economics and stuffs I like. Explained with code and visuals.',
-    siteUrl: 'https://sabbiushah.com.np/',
-    social: {
-      twitter: 'sabbiushah',
-    },
+    siteTitle: 'Sabbiu Shah',
+    siteTitleAlt: `Sabbiu Shah`,
+    siteHeadline: `Sabbiu Shah`,
+    siteUrl: `https://sabbiushah.com.np`,
+    // Used for SEO
+    siteDescription: `Blog on AI, Maths, Economics and stuffs I like. Explained with code and visuals`,
+    // Will be set on the <html /> tag
+    siteLanguage: `en`,
+    // Used for og:image and must be placed inside the `static` folder
+    siteImage: `/banner.jpg`,
+    // Twitter Handle
+    author: `@sabbiushah`,
+    navigation: [
+      {
+        title: `Blog`,
+        slug: `/blog`
+      }
+    ],
+    externalLinks: [
+      {
+        name: 'envelope',
+        url: 'mailto:ssabbiu@gmail.com'
+      },
+      {
+        name: 'github',
+        url: 'https://github.com/sabbiu'
+      },
+      {
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/sabbiu-shah/'
+      },
+      {
+        name: 'twitter',
+        url: 'https://twitter.com/SabbiuShah'
+      },
+      {
+        name: 'stack-overflow',
+        url: 'https://stackexchange.com/users/9281111/sabbiu-shah'
+      }
+    ],
+    tagsPath: '/tags',
+    basePath: '/',
+    blogPath: '/blog',
+    showLineNumbers: true
   },
-  pathPrefix: '/',
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: 'blog',
-      },
+        mdx: false
+      }
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: 'assets',
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-graph',
-            options: {
-              // this is the language in your code-block that triggers mermaid parsing
-              language: 'mermaid', // default
-              theme: 'neutral' // could also be dark, forest, or neutral
-            },
-          },
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 590,
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          {
-            resolve: 'gatsby-remark-prismjs',
-            options: {
-              inlineCodeMarker: '÷',
-            },
-          },
-          'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
-          `gatsby-remark-katex`,
-        ],
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-131081562-1`,
-      },
+        trackingId: process.env.GOOGLE_ANALYTICS_ID
+      }
     },
-    `gatsby-plugin-feed`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Sabbiu Shah`,
-        short_name: `Sabbiu`,
+        short_name: `sabbiu`,
+        description: `Sabbiu Shah Blog`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#F47C48`,
-        display: `minimal-ui`,
-        icon: `content/assets/logo.png`,
-      },
+        background_color: `#fff`,
+        theme_color: `#6B46C1`,
+        display: `standalone`,
+        icons: [
+          {
+            src: `/android-chrome-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`
+          },
+          {
+            src: `/android-chrome-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`
+          }
+        ]
+      }
     },
-    `gatsby-plugin-remove-serviceworker`,
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-netlify`,
     {
-      resolve: 'gatsby-plugin-typography',
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        pathToConfigModule: 'src/utils/typography',
-      },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960
+            }
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`
+            }
+          },
+          `gatsby-remark-katex`
+        ],
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960
+            }
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`
+            }
+          },
+          `gatsby-remark-katex`
+        ]
+      }
     },
     {
-      resolve: 'gatsby-plugin-netlify-cms',
+      resolve: `gatsby-plugin-disqus`,
       options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-      },
+        shortname: `sabbiu-blog`
+      }
     },
-    'gatsby-plugin-netlify', // make sure to keep it last in the array
-  ],
-}
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        googleAdClientId: process.env.GOOGLE_ADSENSE_TRACKING_ID,
+        head: false // Optional
+      }
+    }
+    // `gatsby-plugin-webpack-bundle-analyser-v2`,
+  ]
+};
