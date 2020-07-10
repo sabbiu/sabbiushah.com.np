@@ -1,7 +1,8 @@
 {
-  "name": "sabbiushah",
-  "description": "Sabbiu Shah Blog",
-  "version": "1.0.0",
+  "private": true,
+  "name": "sabbiu-shah-blog",
+  "description": "I'm Sabbiu - interested in building things. I like to write about stuffs I learn, which are mostly related to AI, Maths and Economics.",
+  "version": "1.2.0",
   "author": "Sabbiu Shah <ssabbiu@gmail.com>",
   "license": "MIT",
   "starter-name": "gatsby-starter-minimal-blog",
@@ -18,30 +19,31 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.26",
-    "@fortawesome/free-brands-svg-icons": "^5.12.0",
-    "@fortawesome/free-solid-svg-icons": "^5.12.0",
-    "@fortawesome/react-fontawesome": "^0.1.8",
-    "@lekoarts/gatsby-theme-minimal-blog": "^1.1.7",
-    "@mdx-js/mdx": "^1.5.3",
-    "@mdx-js/react": "^1.5.3",
-    "gatsby": "^2.13.3",
-    "gatsby-plugin-disqus": "^1.1.4",
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-brands-svg-icons": "^5.13.1",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@lekoarts/gatsby-theme-minimal-blog": "^2.4.0",
+    "@mdx-js/mdx": "^1.6.6",
+    "@mdx-js/react": "^1.6.6",
+    "gatsby": "^2.20.36",
+    "gatsby-plugin-disqus": "^1.2.0",
     "gatsby-plugin-google-adsense": "^1.1.3",
-    "gatsby-plugin-google-analytics": "^2.1.4",
+    "gatsby-plugin-google-analytics": "^2.3.11",
     "gatsby-plugin-manifest": "^2.2.3",
-    "gatsby-plugin-mdx": "^1.0.67",
+    "gatsby-plugin-mdx": "^1.2.25",
     "gatsby-plugin-netlify": "^2.1.3",
+    "gatsby-plugin-offline": "^2.2.4",
     "gatsby-plugin-sitemap": "^2.2.19",
-    "gatsby-remark-images": "^3.1.42",
-    "gatsby-remark-katex": "^3.1.23",
-    "gatsby-remark-responsive-iframe": "^2.2.31",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.10",
+    "gatsby-remark-images": "^3.3.18",
+    "gatsby-remark-katex": "^3.3.10",
+    "gatsby-remark-responsive-iframe": "^2.4.11",
     "katex": "^0.11.1",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "cross-env": "^5.2.0",
-    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.8"
+    "cross-env": "^5.2.0"
   }
 }
