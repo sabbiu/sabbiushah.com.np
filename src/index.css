@@ -23,3 +23,8 @@ h3.css-1u9n620 {
 #disqus_thread > iframe {
   margin-bottom: -54px;
 }
+
+.label-prog {
+  margin-top: -0.7rem;
+  /* margin-bottom: -0.5rem;  */
+}

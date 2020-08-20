@@ -1,0 +1,10 @@
+.year:before {
+  background-color: currentColor;
+  content: '';
+  display: inline-block;
+  height: 0.1rem;
+  position: relative;
+  vertical-align: middle;
+  width: 1.2rem;
+  margin: 0 0.1rem 0 0.3rem;
+}
